@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+    <title>Carro</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="image/logo.jpg">
+            </div><!--logo-->
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html" style="color: #EB2D2D;">Venda</a></li>
+                    <li><a href="sobre.html">Sobre nos</a></li>
+                    <li><a data-goto="contato" href="">Contato</a></li>
+                </ul>
+            </nav><!--desktop-->
+
+            <nav class="mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html" style="color: #EB2D2D;">Venda</a></li>
+                    <li><a href="sobre.html">Sobre nos</a></li>
+                    <li><a data-goto="contato" href="">Contato</a></li>
+                </ul>
+            </nav><!--mobile-->
+            <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </header>
+
+    <section class="venda-single">
+
+        <div class="flex-titulo">
+            <div class="linha"></div>
+            <h2>veiculo para venda</h2>
+            <div class="linha"></div>
+        </div><!--flex-->
+        <div class="center">
+            <div class="info-veiculo">
+                <div class="info-bread"><a href="index.html">HOME</a><span></span>
+                    <a href="venda.html">VENDA</a><span></span>
+                    <a href="#">VEICULO DE TESTE</a></div>
+                <div class="foto-destaque"></div>
+                <div class="nav-galeria-parent">
+                    <div class="arrow-left-nav"></div>
+                    <div class="arrow-right-nav"></div>
+                    <div class="nav-galeria">
+                        <div class="nav-galeria-wrapper">
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/carro1.jpg');"></div>
+                            </div><!--mini-img-wrapper-->
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/ford.jpg');"></div>
+                            </div><!--mini-img-wrapper-->
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/bmw.jpg');"></div>
+                            </div><!--mini-img-wrapper-->
+
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/tesla.jpg');"></div>
+                            </div><!--mini-img-wrapper-->
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/Toyota.jpg');"></div>
+                            </div><!--mini-img-wrapper-->
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/honda.jpg');"></div>
+                            </div><!--mini-img-wrapper-->
+
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/carro.png');"></div>
+                            </div><!--mini-img-wrapper-->
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/carro.png');"></div>
+                            </div><!--mini-img-wrapper-->
+                            <div class="mini-img-wrapper">
+                                <div class="mini-img" style="background-image: url('image/carros/carro.png');"></div>
+                            </div><!--mini-img-wrapper-->
+                        </div><!--nav-galeria-wrapper-->
+                    </div><!--nav-galeria-->
+                </div><!--nav-galeria-parent-->
+            </div><!--info-veiculos-->
+
+            <div class="descricao-veiculo">
+                <h2>R$20.000,00</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, optio debitis porro quis odio ullam velit, alias excepturi rem nemo voluptatum possimus totam illum et.</p>
+                <a data-goto="contato" class="btn1" href="">Entre em contato</a>
+            </div><!--descricao-veiculo-->
+            <div class="clear"></div>
+        </div><!--center-->
+    </section><!--venda-single-->
+    
+    <section class="contato">
+        <div class="center">
+            <div class="flex-titulo">
+                <div class="linha"></div>
+                <h2>Contato</h2>
+                <div class="linha"></div>
+            </div><!--flex-->
+            <form>
+                <div class="input-wraper w100">
+                    <input placeholder="Nome" type="text" required>
+                </div><!--w100-->
+
+                <div class="input-wraper w50">
+                    <input placeholder="E-mail" type="text" required>
+                </div><!--w50-->
+
+                <div class="input-wraper w50">
+                    <input placeholder="Telefone" type="text" required>
+                </div><!--w50-->
+
+                <div class="input-wraper w100">
+                    <textarea placeholder="Mensagem" required></textarea>
+                </div><!--w100-->
+
+                <div class="input-wraper w100">
+                    <input type="submit" value="Enviar" class="btn1">
+                </div><!--w100-->
+                <div class="clear"></div><!--clear-->
+            </form>
+        </div>
+    </section><!--contato-->
+
+    <section class="veiculos-destaques">
+        <div class="center">
+            <div class="flex-titulo">
+                <div class="linha"></div>
+                <h2>Veiculos em destaque</h2>
+                <div class="linha"></div>
+            </div><!--flex-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('image/carros/tesla.jpg');" class="carro-img"></div><!--carro-img-->
+                <div class="info-carro">
+                    <h2>Tesla Model 3</h2>
+                    <p>Totalmente elétrico, marcha automática</p>
+                    <a href="./veiculos.html" class="btn1">Mais Detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('image/carros/bmw.jpg');" class="carro-img"></div><!--carro-img-->
+                <div class="info-carro">
+                    <h2>BMW X5</h2>
+                    <p>5.8 8v, Marcha automática </p>
+                    <a href="./veiculos.html" class="btn1">Mais Detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('image/carros/ford.jpg');" class="carro-img"></div><!--carro-img-->
+                <div class="info-carro">
+                    <h2>Ford Mustang</h2>
+                    <p>Gasolina, Marcha manual </p>
+                    <a href="./veiculos.html" class="btn1">Mais Detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+            <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </section><!--veiculos-destaques-->
+
+    <footer>
+        <div class="center">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html" style="color: #EB2D2D;">Venda</a></li>
+                    <li><a href="sobre.html">Sobre nos</a></li>
+                    <li><a data-goto="contato" href="">Contato</a></li>
+                </ul>
+            </nav>
+            <p>Todos os direitos reservados&copy;</p>
+            <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
