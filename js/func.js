@@ -6,22 +6,23 @@ $(function(){
     var precoMaximo = 70000;
     var preco_atual = 0;
 
-    $(".pointer-barra").mousedown(function(){
+    $(".pointer-barra").on("mousedown touchstart", function(){
         isDrag = true;
     });
 
-    $(document).mouseup(function(){
+    $(document).on("mouseup touchend", function(){
         isDrag = false;
         enableSelection();
     });
 
-    $(".barra-preco").mousemove(function(e){
+    $(".barra-preco").on("mousemove touchmove", function(e){
         if(isDrag){
             
             disableSelection();
 
             var elBase = $(this);
-            var mouseX = e.pageX - elBase.offset().left;
+            var eventX = (e.type == "touchmove") ? e.originalEvent.touches[0].pageX : e.pageX;
+            var mouseX = eventX - elBase.offset().left;
             if(mouseX < 0)
                 mouseX = 0;
             if(mouseX > elBase.width())
